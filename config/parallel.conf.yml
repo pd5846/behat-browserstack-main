@@ -1,0 +1,28 @@
+default: 
+    autoload:
+        '': '%paths.base%/../features/bootstrap'
+    suites:
+        default:
+            paths: ['../features/single']
+            contexts:
+                - FeatureContext:
+                    parameters:
+                        browserstack:
+                        server: "hub-cloud.browserstack.com"
+                        user: "priyadineshkumar_peJNSK"
+                        key: "SaHeq6qpe1T3upA6byaF"
+
+                        capabilities:
+                            build: "browserstack build PD"
+                            name: "BStack parallel test"
+                            "browserstack.debug": true
+                            "browserstack.source": "behat:sample-master-v1.0"
+
+                        environments:
+
+                            -
+                                browser: "Safari"
+                                os: "OS X"
+                            -
+                                browser: "Internet explorer"
+                                os: "Windows"
