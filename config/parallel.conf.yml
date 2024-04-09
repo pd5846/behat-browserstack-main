@@ -9,8 +9,8 @@ default:
                     parameters:
                         browserstack:
                         server: "hub-cloud.browserstack.com"
-                        user: "priyadineshkumar_peJNSK"
-                        key: "SaHeq6qpe1T3upA6byaF"
+                        user: "Username"
+                        key: "Password"
 
                         capabilities:
                             build: "browserstack build PD"
